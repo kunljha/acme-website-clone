@@ -1,0 +1,222 @@
+/* universal */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: auto;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-1 {
+  height: 37px;
+  width: 85px;
+  padding: 3px;
+  background-color: #e8491d;
+  color: #ffffff;
+  border: 0;
+}
+
+/* header */
+header {
+  background-color: #35424a;
+  color: #f4f4f4;
+  border-bottom: #e8491d 3px solid;
+  padding: 20px 0 20px 0;
+}
+
+header a {
+  color: #cccccc;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+header li {
+  display: inline;
+}
+
+header h1 {
+  float: left;
+  width: auto;
+}
+
+header nav {
+  float: right;
+  width: auto;
+  padding-top: 35px;
+}
+
+header a:hover {
+  color: #ffffff;
+}
+
+.acme-styling,
+.list-styling a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+/* showcase */
+#showcase {
+  min-height: 400px;
+  background: url("../images/showcase.jpg") no-repeat 0 -400px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: #e8491d 3px solid;
+}
+
+#showcase h1 {
+  font-size: 55px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+/* news-letter */
+#news-letter {
+  background-color: #35424a;
+  color: #ffffff;
+  padding: 20px 0 15px 0;
+  border-bottom: #e8491d 3px solid;
+}
+
+#news-letter h1 {
+  float: left;
+}
+
+#news-letter form {
+  float: right;
+  margin-top: 15px;
+}
+
+#news-letter form input[type="email"] {
+  width: 250px;
+  height: 25px;
+  padding: 3px;
+}
+
+/* boxes */
+#boxes {
+  padding-top: 20px;
+}
+#boxes .box-1 {
+  float: left;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+.box-1 img {
+  width: 90px;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  background-color: #e8491d;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* about us */
+#content #main-col {
+  float: left;
+  width: 65%;
+} /* this applies to services.html also because
+     I have given same ID and class names of some elements 
+  */
+
+#content #sidebar {
+  float: right;
+  width: 30%;
+} /* this applies to services.html also because
+     I have given same ID and class names of some elements 
+    */
+
+#content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+} /* this applies to services.html also because
+     I have given same ID and class names of some elements 
+   */
+
+#content .dark {
+  background-color: #35424a;
+  color: #ffffff;
+  padding: 10px;
+  border: #e8491d 3px solid;
+  margin-bottom: 5px;
+}
+
+/* services */
+#content .box {
+  background-color: #e6e6e6;
+  padding: 25px 18px 25px 18px;
+  margin-bottom: 7px;
+  border: #35424a 2px solid;
+}
+#sidebar .form-items div {
+  margin-bottom: 5px;
+}
+
+#sidebar .form-items div input,
+textarea {
+  width: 90%;
+  height: 20px;
+  padding: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header h1,
+  header nav,
+  #news-letter h1,
+  #news-letter form,
+  #boxes .box-1,
+  #content #main-col,
+  #content #sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav {
+    padding-top: 0;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #news-letter form .btn-1 {
+    display: block;
+    width: 100%;
+  }
+
+  #news-letter form input[type="email"],
+  #sidebar .form-items input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  #sidebar .form-items .btn-1,
+  #sidebar .form-items textarea {
+    width: 91%;
+  }
+}
+
